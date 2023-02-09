@@ -28,7 +28,7 @@ plt.style.use('seaborn')
 
 # plt.gca().xaxis.set_major_formatter(date_format) # gca - get current access
 
-data = pd.read_csv('data_8.csv')
+data = pd.read_csv('data/data_8.csv')
 
 data['Date'] = pd.to_datetime(data['Date'])
 data.sort_values('Date', inplace=True)
